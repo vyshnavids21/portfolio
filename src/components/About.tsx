@@ -17,6 +17,9 @@ const About: React.FC = () => {
           <p>Software Developer at ZeroNorth (formerly Alpha Ori Technologies), Chennai</p>
           <p>Internship at Alpha Ori Technologies (6 months), Chennai</p>
           <p>Over 2 years of hands-on experience in Angular, Node.js, Cassandra</p>
+          <p>
+            Currently expanding expertise in Next.js and modern React-based full-stack development
+          </p>
           <p>Focused on scalability, performance, and clean architecture</p>
         </div>
 

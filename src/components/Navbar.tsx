@@ -12,37 +12,35 @@ const Navbar: React.FC = () => {
   };
 
   useEffect(() => {
-   const container = document.getElementById("scroll-container");
-   const sections = Array.from(
-     document.querySelectorAll<HTMLElement>("section")
-   );
- 
-   if (!container) return;
- 
-   const observer = new IntersectionObserver(
-     (entries) => {
-       const visible = entries
-         .filter((e) => e.isIntersecting)
-         .sort(
-           (a, b) =>
-             a.boundingClientRect.top - b.boundingClientRect.top
-         );
- 
-       if (visible.length > 0) {
-         setActive(visible[0].target.id);
-       }
-     },
-     {
-       root: container,          // ✅ IMPORTANT
-       rootMargin: "-40% 0px -50% 0px",
-       threshold: 0,
-     }
-   );
- 
-   sections.forEach((section) => observer.observe(section));
- 
-   return () => observer.disconnect();
- }, []);
+    const container = document.getElementById("scroll-container");
+    if (!container) return;
+
+    const sectionIds = ["home", "about", "skills", "projects", "contact"];
+    const sectionEls = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean) as HTMLElement[];
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+        if (visible.length > 0) {
+          setActive(visible[0].target.id);
+        }
+      },
+      {
+        root: container,
+        rootMargin: "-40% 0px -50% 0px",
+        threshold: 0,
+      }
+    );
+
+    sectionEls.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
  
   return (
     <nav className="side-navbar">

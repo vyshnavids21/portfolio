@@ -54,6 +54,23 @@ const Projects: React.FC = () => {
                     </div>
 
                     <div className="project-card">
+                        <h3>SLOTBASE – Meeting Room Booking System</h3>
+                        <p className="project-meta">Personal Project</p>
+                        <p className="project-tech">Next.js · Node.js · MongoDB</p>
+                        <p className="project-desc">
+                            A meeting room booking application that allows users to reserve rooms
+                            based on availability, preventing scheduling conflicts and improving
+                            workspace efficiency.
+                        </p>
+                        <ul>
+                            <li>Implemented time-slot based booking with conflict prevention</li>
+                            <li>Real-time room availability management</li>
+                            <li>Admin controls for room status and scheduling</li>
+                            <li>Responsive UI built using Next.js</li>
+                        </ul>
+                    </div>
+
+                    <div className="project-card">
                         <h3>Portfolio Website</h3>
                         <p className="project-meta">Personal Project</p>
                         <p className="project-tech">React</p>
