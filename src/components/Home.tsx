@@ -7,7 +7,7 @@ import MailIcon from "../assets/images/mail-icon.png";
 
 const Home: React.FC = () => {
     return (
-        <section className="home">
+        <div className="home">
             <div className="home-wrapper">
 
                 <div className="home-left">
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
 
             </div>
 
-        </section>
+        </div>
     );
 }
 

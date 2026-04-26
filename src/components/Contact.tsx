@@ -3,7 +3,7 @@ import "./styles/Contact.css";
 
 const Contact: React.FC = () => {
     return (
-        <section className="contact-section">
+        <div className="contact-section">
             <div className="contact-container">
                 <h4 className="contact-title">Primary Contact Information</h4>
                 <div className="contact-item">
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
                 Feel free to reach out via email or LinkedIn.
             </p>
                 
-        </section>
+        </div>
     )
 }
 

@@ -13,7 +13,7 @@ import NpmIcon from "../assets/images/npm-icon.svg";
 
 const Skills: React.FC = () => {
     return (
-      <section className="skills-section">
+      <div className="skills-section">
         <h2 className="skills-title">Technical Skills</h2>
 
         <div className="skills-cards">
@@ -71,7 +71,7 @@ const Skills: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     );
   };
   

@@ -3,7 +3,7 @@ import "./styles/About.css";
 
 const About: React.FC = () => {
   return (
-    <section className="about">
+    <div className="about">
       <h2 className="about-title">About Me</h2>
       <div className="about-cards">
         <div className="about-card">
@@ -30,7 +30,7 @@ const About: React.FC = () => {
           <p>Goal: grow as a developer while making a positive impact</p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -3,7 +3,7 @@ import "./styles/Projects.css";
 
 const Projects: React.FC = () => {
     return (
-        <section className="projects-section">
+        <div className="projects-section">
             <h2 className="projects-heading">Professional & Personal Projects</h2>
             <div className="projects-container">
                 <div className="featured-project">
@@ -100,7 +100,7 @@ const Projects: React.FC = () => {
                 </div>
             </div>
 
-        </section>
+        </div>
     )
 }
 
