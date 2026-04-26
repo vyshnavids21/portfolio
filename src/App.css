@@ -9,6 +9,7 @@
   overflow-y: auto;
   scroll-behavior: smooth;
   padding-top: 80px;
+  background-color: #020617;
   scrollbar-width: thin;
   scrollbar-color: #3b0764 #020617;
 }
