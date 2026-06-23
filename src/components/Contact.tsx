@@ -47,10 +47,6 @@ const Contact: React.FC = () => {
                     Working in Chennai · Based in Kerala
                 </p>
             </div>
-
-            <p className="contact-intro">
-                Feel free to reach out via email or LinkedIn.
-            </p>
                 
         </div>
     )
