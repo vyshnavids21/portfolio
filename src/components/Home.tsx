@@ -1,9 +1,8 @@
 import React from "react";
 import './styles/Home.css';
 import VyshnaviImage from "../assets/images/Vyshnavi_image.jpg";
-import GithubIcon from "../assets/images/github-icon.png";
-import LinkedinIcon from "../assets/images/linkedin-icon.png";
-import MailIcon from "../assets/images/mail-icon.png";
+import { FaLinkedinIn } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Home: React.FC = () => {
     return (
@@ -32,27 +31,18 @@ const Home: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="home-icons">
-                    <a href="mailto:vyshnavids75@gmail.com" className="mail-icon">
-                        <img src={MailIcon} alt="Mail Icon" />
+                <div className="home-social">
+                    <a href="mailto:vyshnavids75@gmail.com" className="home-social-btn" aria-label="Email">
+                        <MdOutlineEmail />
                     </a>
-
-                    <a
-                        href="https://github.com/vyshnavids75-cell"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="github-icon"
-                    >
-                        <img src={GithubIcon} alt="Github Icon" />
-                    </a>
-
                     <a
                         href="https://www.linkedin.com/in/vyshnavids"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="linkedin-icon"
+                        className="home-social-btn"
+                        aria-label="LinkedIn"
                     >
-                        <img src={LinkedinIcon} alt="LinkedIn Icon" />
+                        <FaLinkedinIn />
                     </a>
                 </div>
 

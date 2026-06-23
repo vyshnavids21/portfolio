@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        https://github.com/vyshnavids75-cell
+                        https://github.com/vyshnavids21
                     </a>
                 </div>
             </div>
