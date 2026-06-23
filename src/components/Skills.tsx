@@ -30,10 +30,6 @@ const Skills: React.FC = () => {
             <h3 className="card-title">Frontend Development</h3>
             <div className="skills-icons">
               <div className="skill-item">
-                <img src={ReactIcon} alt="React" title="React" />
-                <span>React</span>
-              </div>
-              <div className="skill-item">
                 <img src={HtmlIcon} alt="HTML" title="HTML" />
                 <span>HTML</span>
               </div>
@@ -52,6 +48,10 @@ const Skills: React.FC = () => {
               <div className="skill-item">
                 <img src={TSIcon} alt="TypeScript" title="TypeScript" />
                 <span>TypeScript</span>
+              </div>
+              <div className="skill-item">
+                <img src={ReactIcon} alt="React" title="React" />
+                <span>React</span>
               </div>
             </div>
           </div>
