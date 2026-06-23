@@ -31,17 +31,6 @@
   margin-bottom: 1rem;
 }
 
-.contact-intro {
-  font-size: 1rem;
-  color: #e5e7eb;
-  margin-top: 2rem;
-  max-width: 720px;
-  opacity: 0;
-  transform: translateX(-40px);
-  animation: contactSlideIn 0.8s ease-out forwards;
-  animation-delay: 0.45s;
-}
-
 .contact-group {
   margin-top: 1.75rem;
   max-width: 720px;
